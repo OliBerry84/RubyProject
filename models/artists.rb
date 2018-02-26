@@ -11,9 +11,13 @@ class Artist
 
   def save()
     sql = "INSERT INTO artists
-    name
+    (
+      name
+    )
     VALUES
+    (
     $1
+    )
     RETURNING id"
     values = [@name]
     results = SqlRunner.run( sql, values )
@@ -22,8 +26,8 @@ class Artist
 
   def Artist.all()
     sql = 'SELECT * FROM artists;'
-    artist = SqlRunner.run( sql )
-    return artist.map { |artist_hash| Artist.new(artist_hash) }
+    artists = SqlRunner.run( sql )
+    return artists.map { |artist_hash| Artist.new(artist_hash) }
   end
 
   def Artist.delete_all()

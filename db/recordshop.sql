@@ -10,7 +10,7 @@ CREATE TABLE artists
 CREATE TABLE albums
 (
   id SERIAL8 primary key,
-  artists_id INT8 references artists(id),
+  artist_id INT8 references artists(id),
   name VARCHAR(255) not null,
   price INT8,
   quantity INT8

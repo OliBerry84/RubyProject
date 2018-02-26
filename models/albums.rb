@@ -33,7 +33,7 @@ class Album
   def Album.all()
     sql = 'SELECT * FROM albums;'
     albums = SqlRunner.run( sql )
-    return albumss.map { |album_hash| Album.new(album_hash)}
+    return albums.map { |album_hash| Album.new(album_hash)}
   end
 
   def Album.delete_all()
