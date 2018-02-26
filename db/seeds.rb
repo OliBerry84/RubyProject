@@ -17,7 +17,6 @@ manufacturer2 =  Manufacturer.new({
 
 manufacturer2.save()
 
-
 manufacturer3 =  Manufacturer.new({
   'name' => 'Suzuki',
   })
@@ -70,7 +69,7 @@ motorbike1 = Motorbike.new({
   'year' => 1995,
   'manufacturer_id' => manufacturer9.id,
   'model' => 'RS-R',
-  'engine_size' => 250,
+  'cc' => 250,
   'price' => 1750,
   'quantity' => 2
   })
@@ -81,7 +80,7 @@ motorbike2 = Motorbike.new({
   'year' => 1999,
   'manufacturer_id' => manufacturer3.id,
   'model' => 'Hayabusa',
-  'engine_size' => 1300,
+  'cc' => 1300,
   'price' => 1200,
   'quantity' => 1
   })
@@ -92,7 +91,7 @@ motorbike3 = Motorbike.new({
   'year' => 2003,
   'manufacturer_id' => manufacturer1.id,
   'model' => 'Ninja ZX-7RR',
-  'engine_size' => 749,
+  'cc' => 749,
   'price' => 14995,
   'quantity' => 1
   })
@@ -103,7 +102,7 @@ motorbike4 = Motorbike.new({
   'year' => 1991,
   'manufacturer_id' => manufacturer2.id,
   'model' => 'VFR',
-  'engine_size' => 748,
+  'cc' => 748,
   'price' => 3490,
   'quantity' => 1
   })
@@ -114,7 +113,7 @@ motorbike5 = Motorbike.new({
   'year' => 2017,
   'manufacturer_id' => manufacturer10.id,
   'model' => 'S 1000 XR',
-  'engine_size' => 999,
+  'cc' => 999,
   'price' => 12500,
   'quantity' => 2
   })
@@ -125,7 +124,7 @@ motorbike6 = Motorbike.new({
   'year' => 1999,
   'manufacturer_id' => manufacturer6.id,
   'model' => 'XL 1200 C Custom Special',
-  'engine_size' => 1200,
+  'cc' => 1200,
   'price' => 9000,
   'quantity' => 1
   })
@@ -136,7 +135,7 @@ motorbike7 = Motorbike.new({
   'year' => 2012,
   'manufacturer_id' => manufacturer8.id,
   'model' => 'MULTISTRADA 1200 S Touring',
-  'engine_size' => 1198,
+  'cc' => 1198,
   'price' => 7990,
   'quantity' => 1
   })
@@ -147,7 +146,7 @@ motorbike8 = Motorbike.new({
   'year' => 1997,
   'manufacturer_id' => manufacturer7.id,
   'model' => 'Speed Triple',
-  'engine_size' => 900,
+  'cc' => 900,
   'price' => 3750,
   'quantity' => 2
   })
@@ -158,7 +157,7 @@ motorbike9 = Motorbike.new({
   'year' => 2009,
   'manufacturer_id' => manufacturer3.id,
   'model' => 'GSXR K8',
-  'engine_size' => 749,
+  'cc' => 749,
   'price' => 5890,
   'quantity' => 3
   })
@@ -169,7 +168,7 @@ motorbike10 = Motorbike.new({
   'year' => 2008,
   'manufacturer_id' => manufacturer2.id,
   'model' => 'CBR RR-8',
-  'engine_size' => 599,
+  'cc' => 599,
   'price' => 4990,
   'quantity' =>1
   })
@@ -180,7 +179,7 @@ motorbike11 = Motorbike.new({
   'year' => 2017,
   'manufacturer_id' => manufacturer5.id,
   'model' => 'RC125',
-  'engine_size' => 125,
+  'cc' => 125,
   'price' => 3890,
   'quantity' => 1
   })
@@ -191,7 +190,7 @@ motorbike12 = Motorbike.new({
   'year' => 2006,
   'manufacturer_id' => manufacturer8.id,
   'model' => 'S4 RS',
-  'engine_size' => 998,
+  'cc' => 998,
   'price' => 6795,
   'quantity' => 1
   })
@@ -202,7 +201,7 @@ motorbike13 = Motorbike.new({
   'year' => 2004,
   'manufacturer_id' => manufacturer8.id,
   'model' => '749S',
-  'engine_size' => 749,
+  'cc' => 749,
   'price' => 4790,
   'quantity' => 2
   })
@@ -213,7 +212,7 @@ motorbike14 = Motorbike.new({
   'year' => 2002,
   'manufacturer_id' => manufacturer9.id,
   'model' => 'RSV MILLE R',
-  'engine_size' => 998,
+  'cc' => 998,
   'price' => 14980,
   'quantity' => 1
   })
@@ -224,7 +223,7 @@ motorbike15 = Motorbike.new({
   'year' => 2010,
   'manufacturer_id' => manufacturer5.id,
   'model' => 'RC8',
-  'engine_size' => 1150,
+  'cc' => 1150,
   'price' => 6590,
   'quantity' => 1
   })
@@ -235,7 +234,7 @@ motorbike16 = Motorbike.new({
   'year' => 2006,
   'manufacturer_id' => manufacturer4.id,
   'model' => 'R6',
-  'engine_size' =>  599,
+  'cc' =>  599,
   'price' => 5290,
   'quantity' => 4
   })

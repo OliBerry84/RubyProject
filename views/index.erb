@@ -1,0 +1,9 @@
+<h1>Moto Dealio</h1>
+<% @motorbikes.each do |motorbike| %>
+<p>Manufacturer: <%= motorbike.manufacturer_id %> </p>
+<p>Model: <%= motorbike.model %> </p>
+<p>CC: <%= motorbike.cc %> </p>
+<p>Price: <%= motorbike.price %> </p>
+<p>Quantity: <%= motorbike.quantity%> </p>
+<hr />
+<% end %>
