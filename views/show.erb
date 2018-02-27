@@ -1,0 +1,7 @@
+<p>Artist: <%= Artist.name(@album.artist_id) %></p>
+<p>Album: <%= @album.name %> </p>
+<p>Quantity: <%= @album.quantity %></p>
+<p>Buy Price: <%=  @album.buyprice%></p>
+<p>Sell Price: <%= @album.sellprice %></p>
+<p><a href="/album/<%= @album.id %>/edit">Update Stock & Information</a>
+</p>

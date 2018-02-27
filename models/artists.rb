@@ -16,12 +16,18 @@ class Artist
     )
     VALUES
     (
-    $1
+      $1
     )
     RETURNING id"
     values = [@name]
     results = SqlRunner.run( sql, values )
     @id = results[0]['id'].to_i
+  end
+
+  def Artist.name(id)
+    sql = "SELECT name FROM artists WHERE id = #{id};"
+    name = SqlRunner.run( sql )[0]["name"]
+    return name
   end
 
   def Artist.all()

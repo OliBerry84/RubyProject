@@ -104,8 +104,9 @@ artist16.save()
 album1 = Album.new({
 'artist_id' => artist1.id,
 'name' => 'Silence in the Snow',
-'price' => 12,
-'quantity' => 5
+'buyprice' => 7,
+'sellprice' => 12,
+'quantity' => 15
   })
 
 album1.save()
@@ -113,8 +114,9 @@ album1.save()
 album2 = Album.new({
 'artist_id' => artist2.id,
 'name' => 'Device',
-'price' => 10,
-'quantity' => 4
+'buyprice' => 6,
+'sellprice' => 10,
+'quantity' => 24
   })
 
 album2.save()
@@ -122,7 +124,8 @@ album2.save()
 album3 = Album.new({
 'artist_id' => artist3.id,
 'name' => 'The Serenity of Suffering',
-'price' => 15,
+'buyprice' => 8,
+'sellprice' => 15,
 'quantity' => 9
   })
 
@@ -131,8 +134,9 @@ album3.save()
 album4 = Album.new({
 'artist_id' => artist4.id,
 'name' => 'Immortalized',
-'price' => 5,
-'quantity' => 7
+'buyprice' => 3,
+'sellprice' => 5,
+'quantity' => 17
   })
 
 album4.save()
@@ -140,8 +144,9 @@ album4.save()
 album5 = Album.new({
 'artist_id' => artist5.id,
 'name' => 'Royal Blood',
-'price' => 11,
-'quantity' => 7
+'buyprice' => 6,
+'sellprice' => 11,
+'quantity' => 17
   })
 
 album5.save()
@@ -149,8 +154,9 @@ album5.save()
 album6 = Album.new({
 'artist_id' => artist5.id,
 'name' => 'How Did We Get So Dark',
-'price' => 15,
-'quantity' => 12
+'buyprice' => 8,
+'sellprice' => 15,
+'quantity' => 22
   })
 
 album6.save()
@@ -158,8 +164,9 @@ album6.save()
 album7 = Album.new({
 'artist_id' => artist6.id,
 'name' => 'A Beautiful Lie',
-'price' => 6,
-'quantity' => 5
+'buyprice' => 4,
+'sellprice' => 6,
+'quantity' => 25
   })
 
 album7.save()
@@ -167,8 +174,9 @@ album7.save()
 album8 = Album.new({
 'artist_id' => artist6.id,
 'name' => 'This is War',
-'price' => 8,
-'quantity' => 3
+'buyprice' => 5,
+'sellprice' => 8,
+'quantity' => 13
   })
 
 album8.save()
@@ -176,8 +184,9 @@ album8.save()
 album9 = Album.new({
 'artist_id' => artist7.id,
 'name' => 'Runnin Wild',
-'price' => 7,
-'quantity' => 3
+'buyprice' => 3,
+'sellprice' => 7,
+'quantity' => 19
   })
 
 album9.save()
@@ -185,8 +194,9 @@ album9.save()
 album10 = Album.new({
 'artist_id' => artist8.id,
 'name' => 'The Best of',
-'price' => 8,
-'quantity' => 2
+'buyprice' => 5,
+'sellprice' => 8,
+'quantity' => 4
   })
 
 album10.save()
@@ -194,8 +204,9 @@ album10.save()
 album11 = Album.new({
 'artist_id' => artist9.id,
 'name' => 'Audioslave',
-'price' => 15,
-'quantity' => 12
+'buyprice' => 8,
+'sellprice' => 15,
+'quantity' => 11
   })
 
 album11.save()
@@ -203,8 +214,9 @@ album11.save()
 album11 = Album.new({
 'artist_id' => artist10.id,
 'name' => 'S & M 2 cd set',
-'price' => 25,
-'quantity' => 7
+'buyprice' => 13,
+'sellprice' => 25,
+'quantity' => 27
   })
 
 album11.save()
@@ -212,8 +224,9 @@ album11.save()
 album12 = Album.new({
 'artist_id' => artist10.id,
 'name' => 'Death Magnetic',
-'price' => 9,
-'quantity' => 6
+'buyprice' => 5,
+'sellprice' => 9,
+'quantity' => 16
   })
 
 album12.save()
@@ -221,8 +234,9 @@ album12.save()
 album13 = Album.new({
 'artist_id' => artist10.id,
 'name' => 'Ride the Lightning',
-'price' => 9,
-'quantity' => 3
+'buyprice' => 5,
+'sellprice' => 9,
+'quantity' => 13
   })
 
 album13.save()
@@ -230,8 +244,9 @@ album13.save()
 album14 = Album.new({
 'artist_id' => artist11.id,
 'name' => 'Nevermind',
-'price' => 8,
-'quantity' => 6
+'buyprice' => 3,
+'sellprice' => 8,
+'quantity' => 26
   })
 
 album14.save()
@@ -239,8 +254,9 @@ album14.save()
 album15 = Album.new({
 'artist_id' => artist12.id,
 'name' => 'Probot',
-'price' => 6,
-'quantity' => 5
+'buyprice' => 2,
+'sellprice' => 6,
+'quantity' => 15
   })
 
 album15.save()
@@ -248,8 +264,9 @@ album15.save()
 album16 = Album.new({
 'artist_id' => artist13.id,
 'name' => 'Broken Boy Soldiers',
-'price' => 7,
-'quantity' => 4
+'buyprice' => 4,
+'sellprice' => 7,
+'quantity' => 14
   })
 
 album16.save()
@@ -257,8 +274,9 @@ album16.save()
 album17 = Album.new({
 'artist_id' => artist13.id,
 'name' => 'Consolers of the Lonely',
-'price' => 8,
-'quantity' => 6
+'buyprice' => 3,
+'sellprice' => 8,
+'quantity' => 16
   })
 
 album17.save()
@@ -266,8 +284,9 @@ album17.save()
 album18 = Album.new({
 'artist_id' => artist14.id,
 'name' => 'Iowa',
-'price' => 5,
-'quantity' => 1
+'buyprice' => 2,
+'sellprice' => 5,
+'quantity' => 21
   })
 
 album18.save()
@@ -275,8 +294,9 @@ album18.save()
 album19 = Album.new({
 'artist_id' => artist15.id,
 'name' => 'Superunknown',
-'price' => 11,
-'quantity' => 7
+'buyprice' => 3,
+'sellprice' => 11,
+'quantity' => 17
   })
 
 album19.save()
@@ -284,8 +304,9 @@ album19.save()
 album20 = Album.new({
 'artist_id' => artist16.id,
 'name' => 'Blurryface',
-'price' => 9,
-'quantity' => 7
+'buyprice' => 4,
+'sellprice' => 9,
+'quantity' => 17
   })
 
 album20.save()

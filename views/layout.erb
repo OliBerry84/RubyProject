@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Giggity Goo Record</title>
+    <meta charset="utf-8" href='../public/stlyes/style.css'>
+    <title>Giggity Goo Records</title>
   </head>
   <body>
-    <h1>Giggity Goo Records</h1>
-<%= yield %>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/inventory">Inventory List</a></li>
+        <li><a href="/addartist">Add Artist</a></li>
+        <li><a href="/addalbum">Add Album</a></li>
+      </ul>
+    </nav>
+        <%= yield %>
   </body>
 </html>

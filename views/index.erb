@@ -1,6 +1,12 @@
 <% @albums.each do |album| %>
-<p>Name: <%= album.name %> </p>
-<p>Price: <%= album.price %></p>
+<p>Artist: <%= Artist.name(album.artist_id) %></p>
+<p>Album: <%= album.name %> </p>
 <p>Quantity: <%= album.quantity %></p>
+<p><%= album.stock_levels %></p>
+<p>Buy Price: <%=  album.buyprice%></p>
+<p>Sell Price: <%= album.sellprice %></p>
+<p>Profit per Sale: <%= album.sellprice - album.buyprice %> </p>
+<p>Profit on Current Stock: <%= (album.quantity*album.sellprice)-(album.quantity*album.buyprice)%></p>
+<a href="/album/<%= album.id %>">Show Album Information</a>
 <hr />
 <% end %>

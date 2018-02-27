@@ -1,0 +1,24 @@
+<form method="post" action="/album/<%= @album.id %>">
+
+  <label for="artist-id">Artist:</label>
+  <select id="artist-id" name="artist_id">
+    <% for artist in @artists %>
+      <option value="<%=artist.id%>"><%=artist.name%></option>
+    <% end %>
+  </select>
+  <label for="name">Album:</label>
+  <input id="name" value="<%= @album.name %>" type="text" name="name"/>
+
+  <label for="buyprice">Buy Price:</label>
+  <input id="buyprice" value="<%= @album.buyprice %>" type="text" name="buyprice"/>
+
+  <label for="sellprice">Sell Price:</label>
+  <input id="sellprice" value="<%= @album.sellprice %>" type="text" name="sellprice"/>
+
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity"
+        value="<%= @album.quantity() %>"/>
+
+<input type="submit" value="Confirm Update"/>
+
+</form>

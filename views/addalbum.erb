@@ -1,0 +1,24 @@
+<form method="post" action="/inventory">
+
+  <label for="artist-id">Artist:</label>
+  <select id="artist-id" name="artist_id">
+    <% for artist in @artists %>
+      <option value="<%=artist.id%>"><%=artist.name%></option>
+    <% end %>
+  </select>
+
+  <label for="name">Album:</label>
+  <input id="name" type="text" name="name">
+
+  <label for="buyprice">Buy Price:</label>
+  <input id="buyprice" type="number" name="buyprice">
+
+  <label for="sellprice">Sell Price:</label>
+  <input id="sellprice" type="number" name="sellprice">
+
+  <label for="quantity">Quantity:</label>
+  <input id="quantity" type="number" name="quantity">
+
+  <input type="Submit" value="Add Stock">
+
+</form>
