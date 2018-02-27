@@ -52,13 +52,15 @@ class Album
     end
   end
 
-  # def profit_per_sale
-  #   return @sellprice - @buyprice
-  # end
+  def profit_per_sale
+    profit = @sellprice - @buyprice
+    return profit
+  end
 
-  # def total_profit_per_album
-  #   return (@sellprice * @quantity) - (@buyprice * @quantity)
-  # end
+  def total_profit_per_album
+    totalprofit = (@sellprice * @quantity) - (@buyprice * @quantity)
+    return totalprofit
+  end
 
   def update()
     sql = "UPDATE albums

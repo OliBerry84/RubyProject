@@ -5,8 +5,8 @@
 <p><%= album.stock_levels %></p>
 <p>Buy Price: <%=  album.buyprice%></p>
 <p>Sell Price: <%= album.sellprice %></p>
-<p>Profit per Sale: <%= album.sellprice - album.buyprice %> </p>
-<p>Profit on Current Stock: <%= (album.quantity*album.sellprice)-(album.quantity*album.buyprice)%></p>
+<p>Profit per Sale: <%= album.profit_per_sale %> </p>
+<p>Profit on Current Stock: <%= album.total_profit_per_album %></p>
 <a href="/album/<%= album.id %>">Show Album Information</a>
 <hr />
 <% end %>
