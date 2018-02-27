@@ -5,3 +5,6 @@
 <p>Sell Price: <%= @album.sellprice %></p>
 <p><a href="/album/<%= @album.id %>/edit">Update Stock & Information</a>
 </p>
+<p><form method="post" action="/album/<%= @album.id %>/delete">
+<input type="submit" value="Delete Album From Inventory">
+</form>

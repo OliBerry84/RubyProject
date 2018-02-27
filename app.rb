@@ -5,6 +5,10 @@ require_relative('./models/albums.rb')
 require_relative('./models/artists.rb')
 
 
+get '/' do
+  erb(:home)
+end
+
 get '/inventory' do
   @albums = Album.all()
   erb(:index)
@@ -51,6 +55,9 @@ post '/album/:id' do
   redirect to '/inventory'
 end
 
-get '/' do
-  erb(:home)
+post '/album/:id/delete' do
+  @artists = Artist.all()
+  @album = Album.find(params[:id].to_i)
+  @album.delete()
+  redirect to '/inventory'
 end
