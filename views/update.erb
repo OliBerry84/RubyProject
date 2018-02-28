@@ -2,9 +2,9 @@
   <tr>
     <th>Artist</th>
     <th>Album</th>
+    <th>Quantity</th>
     <th>Buy Price (£)</th>
     <th>Sell Price (£)</th>
-    <th>Quantity</th>
     <th></th>
   </tr>
 
@@ -14,7 +14,7 @@
   <label for="artist-id"></label>
   <select id="artist-id" name="artist_id">
     <% for artist in @artists %>
-      <option value="<%=artist.id%>"><%=artist.name%></option>
+      <option value="<%= artist.id %>"><%=artist.name%></option>
     <% end %>
   </select>
 </td>
@@ -22,6 +22,12 @@
 <td>
   <label for="name"></label>
   <input id="name" value="<%= @album.name %>" type="text" name="name"/>
+</td>
+
+<td>
+  <label for="quantity"></label>
+  <input type="number" id="quantity" name="quantity"
+        value="<%= @album.quantity() %>"/>
 </td>
 
 <td>
@@ -35,13 +41,6 @@
 </td>
 
 <td>
-  <label for="quantity"></label>
-  <input type="number" id="quantity" name="quantity"
-        value="<%= @album.quantity() %>"/>
-</td>
-
-<td>
-
 <input type="submit" value="Confirm Edit"/>
 </td>
 

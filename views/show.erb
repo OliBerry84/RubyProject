@@ -26,13 +26,14 @@
 <td>
 <%= @album.sellprice %>
 </td>
-<td>
-  <form method="get" action="/album/<%= @album.id %>/edit">
-    <input type="submit" value="Edit Album">
-  </td>
+
 <td>
   <form method="post" action="/album/<%= @album.id %>/delete">
-    <input type="submit" value="Delete Album From Inventory">
+    <input type="submit" value="Delete Album"></form>
   </td>
+<td>
+  <form method="get" action="/album/<%= @album.id %>/edit">
+    <input type="submit" value="Edit Album"></form>
+  </td>
+
 </table>
-</form>
