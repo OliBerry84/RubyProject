@@ -310,6 +310,3 @@ album20 = Album.new({
   })
 
 album20.save()
-
-binding.pry
-nil
