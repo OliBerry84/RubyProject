@@ -1,24 +1,46 @@
+<table>
+<tr>
+  <th>Artist</th>
+  <th>Album</th>
+  <th>Buy Price (£)</th>
+  <th>Sell Price(£)</th>
+  <th>Quantity</th>
+  <th></th>
+</tr>
 <form method="post" action="/inventory">
 
-  <label for="artist-id">Artist:</label>
+  <td>
+    <label for="artist-id"></label>
   <select id="artist-id" name="artist_id">
     <% for artist in @artists %>
       <option value="<%=artist.id%>"><%=artist.name%></option>
     <% end %>
   </select>
+  </td>
 
-  <label for="name">Album:</label>
+  <td>
+  <label for="name"></label>
   <input id="name" type="text" name="name">
+  </td>
 
-  <label for="buyprice">Buy Price:</label>
+  <td>
+  <label for="buyprice"></label>
   <input id="buyprice" type="number" name="buyprice">
+  </td>
 
-  <label for="sellprice">Sell Price:</label>
+  <td>
+  <label for="sellprice"></label>
   <input id="sellprice" type="number" name="sellprice">
+  </td>
 
-  <label for="quantity">Quantity:</label>
+  <td>
+  <label for="quantity"></label>
   <input id="quantity" type="number" name="quantity">
+  </td>
 
+  <td>
   <input type="Submit" value="Add Stock">
+  </td>
 
+  </table>
 </form>

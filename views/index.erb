@@ -1,12 +1,44 @@
-<% @albums.each do |album| %>
-<p>Artist: <%= Artist.name(album.artist_id) %></p>
-<p>Album: <%= album.name %> </p>
-<p>Quantity: <%= album.quantity %></p>
-<p><%= album.stock_levels %></p>
-<p>Buy Price: <%=  album.buyprice%></p>
-<p>Sell Price: <%= album.sellprice %></p>
-<p>Profit per Sale: <%= album.profit_per_sale %> </p>
-<p>Profit on Current Stock: <%= album.total_profit_per_album %></p>
-<a href="/album/<%= album.id %>">Show Album Information</a>
-<hr />
+<table>
+  <tr>
+    <th>Artist</th>
+    <th>Album</th>
+    <th>In Stock</th>
+    <th></th>
+    <th>Buy Price (£)</th>
+    <th>Sell Price (£)</th>
+    <th>Profit per Sale (£)</th>
+    <th>Profit on Entire Stock (£)</th>
+    <th></th>
+  </tr>
+  <% @albums.each do |album| %>
+<tr>
+  <td>
+  <%= Artist.name(album.artist_id) %>
+</td>
+<td>
+  <%= album.name %>
+</td>
+<td>
+  <%= album.quantity %>
+</td>
+<td>
+<%= album.stock_levels %>
+</td>
+<td>
+  <%=  album.buyprice%>
+</td>
+<td>
+  <%= album.sellprice %>
+</td>
+<td>
+<%= album.profit_per_sale %>
+</td>
+<td>
+<%= album.total_profit_per_album %>
+</td>
+<td>
+  <a href="/album/<%= album.id %>">Show Album Information</a>
+</td>
 <% end %>
+</tr>
+</table>

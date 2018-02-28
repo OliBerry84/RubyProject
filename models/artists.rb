@@ -26,7 +26,7 @@ class Artist
 
   def Artist.name(id)
     sql = "SELECT name FROM artists WHERE id = #{id};"
-    name = SqlRunner.run( sql )[0]["name"]
+    name = SqlRunner.run(sql)[0]["name"]
     return name
   end
 

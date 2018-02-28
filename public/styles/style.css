@@ -1,0 +1,17 @@
+.body {
+  background-color: pink;
+  font-size: 10pt;
+  font-family: verdana;
+  padding: 10px;
+  margin: auto;
+}
+
+table {
+  text-align: center;
+  margin: 10px;
+}
+
+tr {
+  margin-top: 1px solid black;
+  margin-bottom: 1px solid black;
+}

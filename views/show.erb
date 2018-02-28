@@ -1,10 +1,37 @@
-<p>Artist: <%= Artist.name(@album.artist_id) %></p>
-<p>Album: <%= @album.name %> </p>
-<p>Quantity: <%= @album.quantity %></p>
-<p>Buy Price: <%=  @album.buyprice%></p>
-<p>Sell Price: <%= @album.sellprice %></p>
-<p><a href="/album/<%= @album.id %>/edit">Update Stock & Information</a>
-</p>
-<p><form method="post" action="/album/<%= @album.id %>/delete">
-<input type="submit" value="Delete Album From Inventory">
+<table>
+  <tr>
+    <th>Artist</th>
+    <th></th>
+    <th>Album</th>
+    <th>Quantity in Stock</th>
+    <th>Buy Price (£)</th>
+    <th>Sell Price (£)</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <td>
+    <p><%= Artist.name(@album.artist_id) %></p>
+  </td>
+  <td>-</td>
+  <td>
+    <p><%= @album.name %> </p>
+  </td>
+  <td>
+  <%= @album.quantity %>
+</td>
+<td>
+<%=  @album.buyprice%>
+</td>
+<td>
+<%= @album.sellprice %>
+</td>
+<td>
+  <a href="/album/<%= @album.id %>/edit">Update Stock & Information</a>
+</td>
+<td>
+  <form method="post" action="/album/<%= @album.id %>/delete">
+    <input type="submit" value="Delete Album From Inventory">
+  </td>
+</table>
 </form>
