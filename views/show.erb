@@ -1,4 +1,4 @@
-<table>
+<table  class="center">
   <tr>
     <th>Artist</th>
     <th></th>
@@ -27,8 +27,9 @@
 <%= @album.sellprice %>
 </td>
 <td>
-  <a class="update-stock-button update-stock-button:hover" href="/album/<%= @album.id %>/edit">Update Stock & Information</a>
-</td>
+  <form method="get" action="/album/<%= @album.id %>/edit">
+    <input type="submit" value="Edit Album">
+  </td>
 <td>
   <form method="post" action="/album/<%= @album.id %>/delete">
     <input type="submit" value="Delete Album From Inventory">

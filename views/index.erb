@@ -1,4 +1,4 @@
-<table>
+<table class="center">
   <tr>
     <th>Artist</th>
     <th></th>
@@ -41,8 +41,12 @@
 <%= album.total_profit_per_album %>
 </td>
 <td>
+  <form method="get" action="/album/<%= album.id %>">
+    <input type="submit" value="Album Stock Information">
+  </td>
+<!-- <td>
   <a class="update-stock-button update-stock-button:hover" href="/album/<%= album.id %>">Show Album Information</a>
-</td>
+</td> -->
 <% end %>
 </tr>
 </table>
