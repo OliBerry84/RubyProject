@@ -1,6 +1,7 @@
 <table>
   <tr>
     <th>Artist</th>
+    <th></th>
     <th>Album</th>
     <th>In Stock</th>
     <th></th>
@@ -14,6 +15,9 @@
 <tr>
   <td>
   <%= Artist.name(album.artist_id) %>
+</td>
+<td>
+  -
 </td>
 <td>
   <%= album.name %>
@@ -37,7 +41,7 @@
 <%= album.total_profit_per_album %>
 </td>
 <td>
-  <a href="/album/<%= album.id %>">Show Album Information</a>
+  <a class="update-stock-button update-stock-button:hover" href="/album/<%= album.id %>">Show Album Information</a>
 </td>
 <% end %>
 </tr>

@@ -27,7 +27,7 @@
 <%= @album.sellprice %>
 </td>
 <td>
-  <a href="/album/<%= @album.id %>/edit">Update Stock & Information</a>
+  <a class="update-stock-button update-stock-button:hover" href="/album/<%= @album.id %>/edit">Update Stock & Information</a>
 </td>
 <td>
   <form method="post" action="/album/<%= @album.id %>/delete">
