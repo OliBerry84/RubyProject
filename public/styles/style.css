@@ -1,7 +1,7 @@
 body {
   background-color: pink;
-  font-size: 10pt;
-  font-family: verdana;
+  font-size: 1em;
+  font-family: georgia;
   padding: 10px;
   margin: auto;
 }
@@ -69,18 +69,16 @@ li a:hover {
     border-bottom: 1px solid pink;
 }
 
-.h1home {
-  text-align: center;
-}
-
-.h2home {
-  text-shadow: 5px;
-  font-size: 30px;
-  font-style: italic;
-  font-family: serif Georgia;
-  text-align: center;
-}
-
 .center {
   text-align: center;
+}
+
+.heading {
+  font-family: "Papyrus", fantasy;
+  font-size: 5em;
+}
+
+.heading2 {
+  font-family: "Papyrus", fantasy;
+  font-size: 3em;
 }
