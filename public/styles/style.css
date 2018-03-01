@@ -53,6 +53,10 @@ table.center {
      float: left;
  }
 
+p.quag {
+  text-shadow: 5px;
+}
+
 .update-stock-button {
   background: pink;
   color: black;
@@ -81,12 +85,12 @@ table.center {
 
 .heading {
   font-family: "Papyrus", fantasy;
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .heading2 {
   font-family: "Papyrus", fantasy;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .foot {

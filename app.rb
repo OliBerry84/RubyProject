@@ -11,7 +11,7 @@ end
 
 get '/inventory' do
   @albums = Album.all()
-  erb(:index)
+  erb(:inventory)
 end
 
 post '/inventory' do
@@ -39,13 +39,13 @@ end
 get '/album/:id' do
   @artists = Artist.all()
   @album = Album.find(params[:id].to_i)
-  erb(:show)
+  erb(:albumedit)
 end
 
 get '/album/:id/edit' do
   @artists = Artist.all()
   @album = Album.find(params[:id].to_i)
-  erb(:update)
+  erb(:edit)
 end
 
 post '/album/:id' do
