@@ -18,6 +18,7 @@ th, td {
   text-align: center;
   border: 1px solid #ccc;
 }
+
 tbody tr:nth-child(odd) {
   background: darkgrey;
 }
