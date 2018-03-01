@@ -1,15 +1,25 @@
 body {
-  background-color: pink;
+  background-color: #B6B6B4;
   font-size: 1em;
   font-family: georgia;
   padding: 10px;
   margin: auto;
 }
 
+body.table {
+  font: normal medium/1.4 sans-serif;
+}
 table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 0.25rem;
   text-align: center;
-  margin: 10px;
-
+  border: 1px solid #ccc;
+}
+tbody tr:nth-child(odd) {
+  background: darkgrey;
 }
 
 table.center {
@@ -17,9 +27,31 @@ table.center {
    margin-right:auto;
  }
 
-td {
-  border-bottom: 2px solid darkgrey;
-}
+ li a {
+     display: block;
+     color: #B6B6B4;
+     text-align: center;
+     padding: 14px 16px;
+ }
+
+ li a:hover {
+     background-color: #B6B6B4;
+     color: black;
+     padding: 14px 16px;
+     border-bottom: 1px solid #B6B6B4;
+ }
+
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: black;
+ }
+
+ li {
+     float: left;
+ }
 
 .update-stock-button {
   background: pink;
@@ -35,38 +67,12 @@ td {
   border-radius: 5px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-}
-
-li {
-    float: left;
-}
-
 .mgmtconsole {
   float: right;
-  color: pink;
+  color: #B6B6B4;
   text-align: center;
   padding: 14px 16px;
   font-size: 14px;
-}
-
-li a {
-    display: block;
-    color: pink;
-    text-align: center;
-    padding: 14px 16px;
-}
-
-li a:hover {
-    background-color: pink;
-    color: black;
-    padding: 14px 16px;
-    border-bottom: 1px solid pink;
 }
 
 .center {
@@ -81,4 +87,9 @@ li a:hover {
 .heading2 {
   font-family: "Papyrus", fantasy;
   font-size: 3em;
+}
+
+.foot {
+  text-align: center;
+  opacity: 0.5;
 }

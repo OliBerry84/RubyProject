@@ -1,7 +1,6 @@
 <table  class="center">
   <tr>
     <th>Artist</th>
-    <th></th>
     <th>Album</th>
     <th>Quantity in Stock</th>
     <th>Buy Price (£)</th>
@@ -13,7 +12,6 @@
   <td>
     <p><%= Artist.name(@album.artist_id) %></p>
   </td>
-  <td>-</td>
   <td>
     <p><%= @album.name %> </p>
   </td>
@@ -28,12 +26,13 @@
 </td>
 
 <td>
-  <form method="post" action="/album/<%= @album.id %>/delete">
-    <input type="submit" value="Delete Album"></form>
-  </td>
-<td>
   <form method="get" action="/album/<%= @album.id %>/edit">
     <input type="submit" value="Edit Album"></form>
+  </td>
+
+<td>
+  <form method="post" action="/album/<%= @album.id %>/delete">
+    <input style="background-color: red" type="submit" value="Delete Album"></form>
   </td>
 
 </table>

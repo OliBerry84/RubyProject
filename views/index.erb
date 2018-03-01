@@ -1,7 +1,8 @@
-<table class="center">
+<body.table>
+<table class="center" "zebra">
+  <thead>
   <tr>
     <th>Artist</th>
-    <th></th>
     <th>Album</th>
     <th>In Stock</th>
     <th></th>
@@ -11,13 +12,12 @@
     <th>Profit on Entire Stock (£)</th>
     <th></th>
   </tr>
+</thead>
+<tbody>
   <% @albums.each do |album| %>
 <tr>
   <td>
   <%= Artist.name(album.artist_id) %>
-</td>
-<td>
-  -
 </td>
 <td>
   <%= album.name %>
@@ -42,8 +42,10 @@
 </td>
 <td>
   <form method="get" action="/album/<%= album.id %>">
-    <input type="submit" value="Album Info"></form>
+    <input type="submit" value="Edit Menu"></form>
   </td>
 <% end %>
 </tr>
+</tbody>
 </table>
+</body>
